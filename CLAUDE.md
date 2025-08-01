@@ -39,7 +39,7 @@ The theme uses a two-tier CSS variable system:
 
 - Both `.theme-dark` and `.theme-light` selectors use the same styling to ensure consistent dark appearance
 - Color variables are centralized at the top of `theme.css` for easy customization
-- The theme maintains compatibility with Obsidian 0.16.0+
+- The theme maintains compatibility with Obsidian 1.18.0+
 - No build process required - direct CSS editing
 
 ## Testing
@@ -65,4 +65,4 @@ To test theme changes:
 
 ## Known Limitations and Quirks
 
-- The "name" key in manifest.json must exactly match the name of the directory
+- IMPORTANT: The "name" key in `manifest.json` must EXACTLY match the name of the directory
