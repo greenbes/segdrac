@@ -1,0 +1,38 @@
+{
+  "rules": {
+    "selector-class-pattern": null,
+    "selector-id-pattern": null,
+    "color-hex-length": "long",
+    "declaration-block-no-redundant-longhand-properties": null,
+    "no-descending-specificity": null,
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["global"]
+      }
+    ],
+    "property-no-unknown": [
+      true,
+      {
+        "ignoreProperties": [
+          "print-color-adjust",
+          "-webkit-print-color-adjust"
+        ]
+      }
+    ],
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["media"]
+      }
+    ],
+    "font-family-no-missing-generic-family-keyword": null,
+    "declaration-block-no-duplicate-properties": true,
+    "color-no-invalid-hex": true,
+    "string-no-newline": true,
+    "unit-no-unknown": true,
+    "property-no-vendor-prefix": null,
+    "value-no-vendor-prefix": null,
+    "selector-no-vendor-prefix": null
+  }
+}
