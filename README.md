@@ -1,86 +1,59 @@
 # segdrac Theme for Obsidian
 
-A dark theme for [Obsidian](https://obsidian.md) based on the popular Dracula color scheme with custom modifications for enhanced readability and aesthetics.
+A carefully crafted Dracula-based dark theme for [Obsidian](https://obsidian.md) that enhances readability while maintaining the classic Dracula aesthetic.
 
-## Features
+## Key Features
 
-- **Dracula Color Palette**: Classic Dracula colors with custom enhancements
-- **Unified Dark Mode**: Both light and dark modes use the same dark theme for consistency
-- **Enhanced Code Syntax Highlighting**: Beautiful syntax highlighting for code blocks with Dracula colors
-- **Custom Heading Colors**: Each heading level has its own distinct color
-- **Improved Link Styling**: External links are italicized for easy differentiation
-- **Naked Embeds**: Clean embedded content without titles
-- **Custom Blockquotes**: Styled with accent colors and italic text
-- **Enhanced Tables**: Clear borders and alternating backgrounds
-- **Task List Styling**: Custom checkbox design with accent colors
-- **Bullet Point Relationship Lines**: Visual hierarchy for nested lists
-- **Print Support**: Dark theme maintained when printing
+### Visual Enhancements
+- **Unified Dark Mode** - Consistent dark theme across all Obsidian modes
+- **Distinct Heading Colors** - Each heading level (H1-H6) has its own Dracula color
+- **Enhanced Search Highlighting** - Improved contrast for search results and matches
+- **Naked Embeds** - Clean embedded content without distracting titles
+- **Smart Link Styling** - External links italicized for easy differentiation
 
-## Color Scheme
+### Code & Content
+- **Dracula Syntax Highlighting** - Full syntax highlighting for code blocks
+- **Custom Blockquotes** - Yellow-accented quotes with subtle borders
+- **Improved Tables** - Clear borders and enhanced readability
+- **Nested List Lines** - Visual hierarchy indicators for nested lists
+- **Task Checkboxes** - Custom styled checkboxes with accent colors
 
-- Background: `#282a36` (Dracula background)
-- Foreground: `#f8f8f2` (Dracula foreground)
-- Comments: `#6272A4`
-- Keywords: `#FF79C6` (Pink)
-- Functions: `#50FA7B` (Green)
-- Strings: `#F1FA8C` (Yellow)
-- Numbers: `#BD93F9` (Purple)
-- Links: Accent green with custom styling
+### Plugin Support
+Compatible with popular Obsidian plugins including Calendar, Kanban, Dataview, Outliner, Excalidraw, and more.
 
 ## Installation
 
-### Manual Installation
+1. Download `theme.css` and `manifest.json` from this repository
+2. Open Obsidian Settings → Appearance → Themes
+3. Click "Open themes folder"
+4. Create a new folder called `segdrac`
+5. Copy both files into the `segdrac` folder
+6. Restart Obsidian
+7. Select "segdrac" from the theme dropdown
 
-1. Download the theme files from this repository
-2. Open Obsidian Settings
-3. Go to Appearance � Themes
-4. Click on "Open themes folder" button
-5. Create a new folder called `seg-modified-dracula`
-6. Copy `manifest.json` and `theme.css` into this folder
-7. Restart Obsidian
-8. Go to Settings � Appearance � Themes
-9. Select "segdrac" from the dropdown
-
-### Obsidian Community Themes
-
-*Note: This theme is not yet available in the community themes. For now, please use manual installation.*
+### Quick Install (macOS/Linux)
+If you have `just` installed, simply run:
+```bash
+just install
+```
 
 ## Customization
 
-The theme uses CSS variables that can be customized. Key variables include:
+The theme uses CSS variables prefixed with `--seg-` for easy customization. Create a CSS snippet in `.obsidian/snippets/` to override:
 
-- `--text-title-h1` through `--text-title-h6`: Heading colors
-- `--text-link`: Link color
-- `--text-tag`: Tag color
-- `--interactive-accent`: Accent color for interactive elements
-- `--markup-code`: Color for bold text and inline code
-
-To customize these, you can create a CSS snippet in your vault's `.obsidian/snippets/` folder.
+- `--seg-dracula-*` - Color palette
+- `--seg-content-*` - Spacing and layout
+- `--seg-border-*` - Border styles
 
 ## Compatibility
 
-- Minimum Obsidian version: 0.16.0
-- Works with both Live Preview and Reading modes
-- Compatible with most Obsidian plugins
+- **Minimum Obsidian**: 0.16.0
+- **Modes**: Live Preview and Reading
+- **Print Support**: Maintains dark theme when printing
 
-## Screenshots
+## License & Credits
 
-*Screenshots coming soon*
+MIT License
 
-## Contributing
-
-Feel free to submit issues or pull requests if you have suggestions for improvements.
-
-## License
-
-This theme is released under the MIT License. The original Dracula theme is created by [Dracula Theme](https://draculatheme.com/).
-
-## Author
-
-- Modified by: SEG
-- GitHub: [https://github.com/greenbes](https://github.com/greenbes)
-
-## Acknowledgments
-
-- Original [Dracula Theme](https://draculatheme.com/) creators
-- Obsidian community for inspiration and feedback
+Based on the [Dracula Theme](https://draculatheme.com/) color palette.
+Modified by [SEG](https://github.com/greenbes)
