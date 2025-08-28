@@ -172,6 +172,14 @@
 
 /* LINKS & BRACKETS */
 
+/* Remove underlines from all links */
+a,
+.internal-link,
+.external-link,
+.cm-url {
+  text-decoration: none !important;
+}
+
 /* url's */
 .cm-url,
 .external-link {
@@ -774,22 +782,42 @@ mark,
   top: 1.3px !important;
   right: 5px !important;
   box-sizing: border-box;
-  border: 1px solid var(--accent-2);
+  border: 2px solid var(--seg-dracula-cyan);
+  background-color: rgba(68, 71, 90, 0.6);
   position: relative;
   width: 1.25em;
   height: 1.25em;
   margin: 0;
-  box-shadow: var(--seg-checkbox-shadow) var(--interactive-accent);
+  box-shadow: 
+    var(--seg-checkbox-shadow) var(--seg-dracula-cyan),
+    inset 0 0 0 1px rgba(139, 233, 253, 0.2);
+}
+
+.markdown-preview-view .task-list-item-checkbox:hover {
+  border-color: var(--seg-dracula-green);
+  background-color: rgba(80, 250, 123, 0.1);
+  box-shadow: 
+    var(--seg-checkbox-shadow) var(--seg-dracula-green),
+    inset 0 0 0 1px rgba(80, 250, 123, 0.3);
+}
+
+.markdown-preview-view .task-list-item-checkbox:checked {
+  background-color: var(--seg-dracula-green);
+  border-color: var(--seg-dracula-green);
+  box-shadow: 
+    0 0 0.5em var(--seg-dracula-green),
+    inset 0 0 0 2px var(--seg-dracula-bg);
 }
 
 .markdown-preview-view .task-list-item-checkbox:checked::before {
   content: "✓";
   position: absolute;
-  color: var(--interactive-accent);
-  line-height: 1.25em;
+  color: var(--seg-dracula-bg);
+  font-weight: bold;
+  font-size: 1.1em;
+  line-height: 1.15em;
   width: 1.2em;
   text-align: center;
-  text-shadow: 0 0 0.5em var(--accent-2);
 }
 
 .markdown-preview-view .task-list-item-checkbox {
@@ -798,6 +826,7 @@ mark,
 
 .checkbox-container {
   background-color: var(--background-primary-alt);
+  border: 1px solid var(--seg-dracula-comment);
   border-radius: 14px;
   display: inline-block;
   height: 22px;
@@ -805,7 +834,7 @@ mark,
   top: 4px;
   user-select: none;
   width: 42px;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.3);
   transition:
     background 0.15s ease-in-out,
     box-shadow 0.15s ease-in-out,
@@ -815,7 +844,9 @@ mark,
 }
 
 .checkbox-container.is-enabled {
-  background-color: var(--interactive-accent);
+  background-color: var(--seg-dracula-green);
+  border-color: var(--seg-dracula-green);
+  box-shadow: 0 0 10px rgba(80, 250, 123, 0.4);
 }
 
 .markdown-preview-view mark {
@@ -1127,3 +1158,49 @@ ol {
   background-color: var(--text-selection) !important;
   color: var(--text-normal) !important;
 }
+
+
+
+
+
+
+  --bases-header-border-width: 0 0 1px 0;
+  --bases-header-height: 40px;
+  --bases-header-padding-start: 2px;
+  --bases-header-padding-end: 2px;
+  --bases-toolbar-label-display: block;
+  --bases-toolbar-badge-display: none;
+  --bases-embed-border-width: 0px;
+  --bases-embed-border-color: var(--background-modifier-border);
+  --bases-embed-border-radius: var(--radius-s);
+  --bases-filter-menu-width: 520px;
+  --bases-table-container-border-width: 1px;
+  --bases-table-container-border-radius: var(--radius-s);
+  --bases-table-header-weight: var(--font-weight);
+  --bases-table-header-color: var(--text-muted);
+  --bases-table-header-icon-display: flex;
+  --bases-table-header-background: var(--background-primary);
+  --bases-table-header-background-hover: var(--background-modifier-hover);
+  --bases-table-header-sort-mask: linear-gradient(to left, transparent var(--size-4-6), black var(--size-4-6));
+  --bases-table-border-color: var(--table-border-color);
+  --bases-table-column-border-width: 1px;
+  --bases-table-row-border-width: 1px;
+  --bases-table-row-background-hover: var(--table-row-background-hover);
+  --bases-table-row-height: 30px;
+  --bases-table-text-size: var(--font-smaller);
+  --bases-table-column-max-width: 300;
+  --bases-table-column-min-width: 40;
+  --bases-table-cell-radius-active: 2px;
+  --bases-table-cell-shadow-active: 0 0 0 2px var(--interactive-accent);
+  --bases-table-cell-background-active: var(--background-primary);
+  --bases-table-cell-background-disabled: var(--background-primary-alt);
+  --bases-cards-container-background: var(--background-primary);
+  --bases-cards-background: var(--background-primary);
+  --bases-cards-cover-background: var(--background-primary-alt);
+  --bases-cards-scale: 1;
+  --bases-cards-group-padding: var(--size-4-3);
+  --bases-cards-line-height: 24px;
+  --bases-cards-border-width: 1px;
+  --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border);
+  --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover);
+  --bases-cards-text-size: var(--font-smaller);
