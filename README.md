@@ -2,27 +2,6 @@
 
 A carefully crafted Dracula-based dark theme for [Obsidian](https://obsidian.md) that enhances readability while maintaining the classic Dracula aesthetic.
 
-## Key Features
-
-### Visual Enhancements
-- **Unified Dark Mode** - Consistent dark theme across all Obsidian modes
-- **Distinct Heading Colors** - Each heading level (H1-H6) has its own Dracula color
-- **Enhanced Search Highlighting** - Improved contrast for search results and matches
-- **Naked Embeds** - Clean embedded content without distracting titles
-- **Smart Link Styling** - External links italicized for easy differentiation
-
-### Code & Content
-- **Dracula Syntax Highlighting** - Full syntax highlighting for code blocks
-- **Custom Blockquotes** - Yellow-accented quotes with subtle borders
-- **Improved Tables** - Clear borders and enhanced readability
-- **Nested List Lines** - Visual hierarchy indicators for nested lists
-- **Task Checkboxes** - Custom styled checkboxes with accent colors
-
-### Plugin Support
-Compatible with popular Obsidian plugins including Calendar, Kanban, Dataview, Outliner, Excalidraw, and more.
-
-## Installation
-
 1. Download `theme.css` and `manifest.json` from this repository
 2. Open Obsidian Settings → Appearance → Themes
 3. Click "Open themes folder"
@@ -57,3 +36,13 @@ MIT License
 
 Based on the [Dracula Theme](https://draculatheme.com/) color palette.
 Modified by [SEG](https://github.com/greenbes)
+
+## Author
+
+- Modified by: SEG
+- GitHub: [https://github.com/greenbes](https://github.com/greenbes)
+
+## Acknowledgments
+
+- Original [Dracula Theme](https://draculatheme.com/) creators
+- Obsidian community for inspiration and feedback
