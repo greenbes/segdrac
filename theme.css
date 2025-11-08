@@ -1205,8 +1205,50 @@ ol {
   --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover);
   --bases-cards-text-size: var(--font-smaller);
 
+/* ======================================== */
+/* BASES PLUGIN - CARDS CUSTOMIZATION      */
+/* ======================================== */
+
+/* Make cover image take only 30% of card height to leave more room for properties */
+.bases-cards-item .bases-cards-cover {
+  height: 30% !important;
+}
+
+/* Minimize spacing between all properties */
+.bases-cards-item .bases-cards-property {
+  margin: 0 !important;
+  padding: 2px 4px !important;
+}
+
+/* Compress property labels to save vertical space */
+.bases-cards-item .bases-cards-label {
+  font-size: 0.7em !important;
+  line-height: 1.2 !important;
+  margin-bottom: 1px !important;
+}
+
+/* Enable text wrapping and expansion for summary property */
+.bases-cards-property[data-property*="summary"] {
+  height: auto !important;
+  min-height: 80px !important;
+}
+
+.bases-cards-property[data-property*="summary"] .bases-cards-line {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  height: auto !important;
+  line-height: 1.4 !important;
+  display: block !important;
+}
+
+.bases-cards-property[data-property*="summary"] .bases-rendered-value {
+  height: auto !important;
+  overflow: visible !important;
+}
+
 /* ------------------------------------------------
- Mermaid 
+ Mermaid
  -------------------------------------------------- */
 
 body {
@@ -1220,19 +1262,24 @@ body {
 .mermaid .node:not([class$="id"]) path:not([style*="fill"]):not([style*="stroke"]) {
   fill:   #000000   !important;
   stroke: #FFFFFF   !important;
-  stroke-width: 2px !important;
+  stroke-width: 2px !important; /* node border thickness */
 }
 
 .mermaid .edgePath .path,
 .mermaid .flowchart-link {
-  stroke: #888888 !important;
+  stroke: var(--seg-dracula-fg) !important;
+  stroke-width: 3px !important; /* connection line thickness */
 }
 
+.mermaid .marker {
+  stroke: var(--seg-dracula-fg) !important;
+  fill: var(--seg-dracula-fg) !important;
+}
 .mermaid .label {
     font-family: var(--mermaid-font-family) !important;
 }
 
-.marker {
-  fill:   #555555 !important;
-  stroke: #888888 !important;
+.mermaid .nodeLabel {
+  color: var(--seg-dracula-fg)  !important;
 }
+
