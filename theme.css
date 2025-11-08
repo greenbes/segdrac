@@ -1237,6 +1237,20 @@ ol {
   margin-bottom: 1px !important;
 }
 
+/* Enable text wrapping for title field */
+.bases-cards-property.mod-title {
+  height: auto !important;
+  min-height: 24px !important;
+}
+
+.bases-cards-property.mod-title .bases-cards-line {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  height: auto !important;
+  line-height: 1.3 !important;
+}
+
 /* Enable text wrapping and expansion for summary property */
 .bases-cards-property[data-property*="summary"] {
   height: auto !important;
